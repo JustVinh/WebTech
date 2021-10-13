@@ -1,0 +1,54 @@
+body {
+    box-sizing: border-box;
+}
+
+/* border collapse de gan cac border sat lai voi nhau*/
+.exTable {
+    font-family:Arial;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exTable th {
+    border : 1px solid gray;
+    background-color: #d4d4d4;
+    text-align: left;
+}
+
+.exTable tr *{
+    height: 50px;
+    padding: 10 20 10 10;
+}
+
+.exTable tr:nth-child(odd) {
+    background-color: rgb(236, 236, 236);
+}
+
+.exTable tr th:nth-child(even) {
+    color: rgb(61, 180, 235);
+}
+
+.exTable tr td:nth-child(1) {
+    width : 20px;
+}
+
+.exTable tr td:nth-child(2) {
+    background-color: #e6e6e6;
+}
+
+.exTable tr td:nth-child(3) {
+    color: rgb(61, 180, 235);
+}
+
+td[class ~= "ad"] {
+    color: rgb(61, 180, 235);
+}
+
+.exTable tr:hover {
+    background-color: rgb(125, 209, 248);
+}
+
+
