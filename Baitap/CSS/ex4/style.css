@@ -1,0 +1,18 @@
+
+p{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#ex4 :nth-child(n+4){
+    color: red;
+}
+
+#ex4::first-letter{
+    font-size: 5em;
+    float:left;
+    position: relative;
+    bottom: 1000px;
+    color: rgb(141, 212, 33);
+}
