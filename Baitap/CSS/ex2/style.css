@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    display: inline-block;
+    background-color: turquoise;
+    width: 100%;
+}
+
+/* dat 94, k dat 95 vi con 1% cho margin */
+.titleContainer {
+    display: inline-block;
+    width:89%;
+    margin-left: 50px;
+    position:relative;
+}
+
+#openNav{
+    vertical-align: baseline;
+    background-color: rgb(54, 122, 124);
+    border-color: rgb(54, 122, 124);
+}
+
+#openNav div {
+    width: 25px;
+    height: 2.5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#closeNav {
+    background-color: rgb(54, 122, 124);
+    border-color: white;
+}
+
+#closeNav div {
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.navItem {
+    display : block;
+}
+
+#profileIcon {
+    display: inline-block;
+    width: 25px;
+    height : 25px;
+    float: right;
+    position: relative;
+    top:28px;
+}
+
+.sidebar {
+    background-color: rgb(54, 122, 124);
+}
+
+#profImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float:left;
+}
+
+/* clear both de k bi a?nh float chiem dien tich do\ng */
+.navItem{
+    clear: both;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color:white;
+
+    font-size: 1.4em;
+    position: relative;
+    left:40px;
+}
+
+.pNavItem:hover {
+    background-color: white;
+    color: rgb(54, 122, 124);
+}
+.navItem:hover {
+    color: rgb(54, 122, 124);
+}
+
+.welcomeAlex{
+    padding-top: 6px;
+    padding-left: 60px;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.contentPara {
+    border-width: 1px;
+    border : 1px solid rgb(90, 189, 192);
+    margin-right: 5%;
+    margin-left:5%;
+}
+.iconNav {
+    display: inline-block; 
+    width:20px; 
+    height:20px;
+    margin-right: 10px;
+}
+

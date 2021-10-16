@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="viewport" content ="width=device-width, initial-scale =1">
+    <link rel ="stylesheet" href ="style.css">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <div class = "sidebar" style = "display:none" id = "mySidebar">
+        <button id="closeNav" onClick="closeNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div id ="welcome">
+            <img id ="profImg" src="res/ichigo_manga_lineart_by_emptyysoulx_d64415y-fullview.jpg">
+            <div class = "welcomeAlex">
+                <div style = "color:#a0f7f7">Welcome</div>
+                <div style = "color:white">Alex John</div>
+            </div>
+        </div>
+        <div class ="pNavItem">
+            <a class ="navItem">
+                <img class="iconNav" src="res/drafting-compass-solid.svg">Dashboard</a>
+        </div>
+        <div class ="pNavItem">
+            <a class ="navItem">
+                <img class="iconNav" src="res/edit-regular.svg">Forms</a>
+        </div>
+        <div class ="pNavItem">
+            <a class ="navItem">
+                <img class="iconNav" src="res/fill-solid.svg">UI Elements</a>
+        </div>
+        <div class ="pNavItem">
+            <a class ="navItem">
+                <img class="iconNav" src="res/layer-group-solid.svg">Charts</a>
+        </div>
+        <div class ="pNavItem">
+            <a class ="navItem">
+                <img class="iconNav" src="res/paint-roller-solid.svg">Tables</a>
+        </div>
+        
+    </div>
+
+    <div id ="main">
+        <div class ="jumbotron">
+            <button id ="openNav" onclick="openNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class ="titleContainer">
+                <!-- h1 chiem het width cua parent -->
+                <h1 style="display:inline-block; color: rgb(55, 121, 114);">CODING MARKET</h1>
+                <img id = "profileIcon"  src="res/account-avatar-profile-human-man-user-30448.png">
+            </div>
+        </div>
+
+        <div class ="contentContainer">
+            <p class ="contentPara">いまだかつて偉大なもので熱烈な精神なくして成し遂げられたものは何もない。 いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。 彼らのコミュニケーションは我々が考えてきたものよりはるかに複雑かもしれません。 日本人ならそんなことはけっしてしないでしょう。 「ハムレット」はこれまでで最もおもしろい戯曲だと言われている。 ３年前に東京へ来て以来ここに住んでいる。 驚かない所をみると知ってたのね。</p>
+            <br>
+            <p class ="contentPara">いまだかつて偉大なもので熱烈な精神なくして成し遂げられたものは何もない。 いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。 彼らのコミュニケーションは我々が考えてきたものよりはるかに複雑かもしれません。 日本人ならそんなことはけっしてしないでしょう。 「ハムレット」はこれまでで最もおもしろい戯曲だと言われている。 ３年前に東京へ来て以来ここに住んでいる。 驚かない所をみると知ってたのね。</p>
+            <br>
+            <p class ="contentPara">いまだかつて偉大なもので熱烈な精神なくして成し遂げられたものは何もない。 いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。 彼らのコミュニケーションは我々が考えてきたものよりはるかに複雑かもしれません。 日本人ならそんなことはけっしてしないでしょう。 「ハムレット」はこれまでで最もおもしろい戯曲だと言われている。 ３年前に東京へ来て以来ここに住んでいる。 驚かない所をみると知ってたのね。</p>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        function openNav () {
+            //sizebar dc open thi main content bi dich sang ben phai
+            document.getElementById("main").style.marginLeft = "30%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            //this line is kinda solve the problem of 2 div cung 1 dong
+            document.getElementById("mySidebar").style.float = "left";
+            document.getElementById("openNav").style.display = 'none';
+            document.getElementsByClassName("contentContainer").style.marginLeft="0%";
+        }
+
+        function closeNav() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>
