@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+/* bai 1 */
+
+.btn {
+    background-color: rgb(55, 176, 233);
+    margin:-1px 0 0 -1px;
+    width: 80px;
+    height: 60px;
+    border-color: rgb(31, 175, 175);
+    color:white;
+}
+
+.btn:hover{
+    background-color: rgb(252, 101, 55);
+}
+
+#btn1{
+    border-radius: 50px 0 0 50px;
+    border-width: 0 1px 0 0;
+}
+/* 1 1 1 1 top right down left */
+#btn2{
+    border-width: 0 1px 0 1px;
+}
+#btn3{
+    border-radius: 0 50px 50px 0;
+    border-width: 0 0 0 1px;
+}
+
+/* bai 2 */
+/* list-style-type = none : list k co dau cham dau dong */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(88, 181, 235);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(45, 133, 216);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(36, 34, 34);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(45, 133, 216);}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

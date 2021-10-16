@@ -73,9 +73,9 @@
     align-items: center;
     color:white;
 
-    font-size: 1.4em;
+    font-size: 1.6em;
     position: relative;
-    left:40px;
+    left:80px;
 }
 
 .pNavItem:hover {
